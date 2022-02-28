@@ -1,0 +1,8 @@
+prefix=/home/sms/ROS_Workspace/work_test1/install
+
+Name: packegont
+Description: Description of packegont
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/sms/ROS_Workspace/work_test1/devel
+
+Name: package_one
+Description: Description of package_one
+Version: 0.0.0
+Cflags: -I/home/sms/ROS_Workspace/work_test1/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

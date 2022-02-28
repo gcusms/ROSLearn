@@ -1,0 +1,8 @@
+prefix=/home/sms/ROS_Workspace/work_test1/install
+
+Name: packeg_one
+Description: Description of packeg_one
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
