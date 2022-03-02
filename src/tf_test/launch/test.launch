@@ -1,0 +1,8 @@
+<launch>
+    <!-- <node pkg = "package_one" type = "talker" name = "talker" output = "screen"/> -->
+    <!--
+        静态偏移
+    -->
+    <node pkg = "tf" type = "static_transform_publisher" name = "static_transform" args = "1.0 -1.0 01.0 0.0 0.0 0.0 /tf1 /tf2 20"> 
+    </node>
+</launch>

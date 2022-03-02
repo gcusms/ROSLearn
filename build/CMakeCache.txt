@@ -266,6 +266,12 @@ SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 //Name of the computer/site where compile is being run
 SITE:STRING=gcusms
 
+//Value Computed by CMake
+Tf_Change_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/Tf_Change
+
+//Value Computed by CMake
+Tf_Change_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/Tf_Change
+
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
@@ -298,6 +304,9 @@ bingda_tutorials_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/bingda
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
@@ -391,6 +400,12 @@ package_one_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/package_o
 package_one_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/package_one
 
 //Value Computed by CMake
+package_tf_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/package_tf
+
+//Value Computed by CMake
+package_tf_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/package_tf
+
+//Value Computed by CMake
 packeg_one_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/packeg_one
 
 //Value Computed by CMake
@@ -402,8 +417,20 @@ packegont_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/packegont
 //Value Computed by CMake
 packegont_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/packegont
 
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
+
+//Value Computed by CMake
+robot_package_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/robot_package
+
+//Value Computed by CMake
+robot_package_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/robot_package
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/melodic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/melodic/share/roscpp/cmake
@@ -420,8 +447,14 @@ rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
+
 //The directory containing a CMake configuration file for rosmsg.
 rosmsg_DIR:PATH=/opt/ros/melodic/share/rosmsg/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
@@ -438,6 +471,9 @@ std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
 
+//The directory containing a CMake configuration file for tf2_geometry_msgs.
+tf2_geometry_msgs_DIR:PATH=/opt/ros/melodic/share/tf2_geometry_msgs/cmake
+
 //The directory containing a CMake configuration file for tf2_msgs.
 tf2_msgs_DIR:PATH=/opt/ros/melodic/share/tf2_msgs/cmake
 
@@ -447,8 +483,38 @@ tf2_py_DIR:PATH=/opt/ros/melodic/share/tf2_py/cmake
 //The directory containing a CMake configuration file for tf2_ros.
 tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
 
+//Value Computed by CMake
+tfChange_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/tfChange
+
+//Value Computed by CMake
+tfChange_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/tfChange
+
+//Value Computed by CMake
+tfTest_package_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/test2
+
+//Value Computed by CMake
+tfTest_package_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/test2
+
+//Value Computed by CMake
+tf_Change_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/tf_Change
+
+//Value Computed by CMake
+tf_Change_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/tf_Change
+
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
+
+//Value Computed by CMake
+tf_test_BINARY_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/build/tf_test
+
+//Value Computed by CMake
+tf_test_SOURCE_DIR:STATIC=/home/sms/ROS_Workspace/work_test1/src/tf_test
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -563,7 +629,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,0 +1,8 @@
+<launch>
+    <node pkg= "package_one" type = "talker" name = "talker"/>
+    <node pkg = "package_one" type = "listener" name = "listener" output = "screen"/>
+    <!--启动另外一个launch文件
+    -->
+    <include file = "$(find package_one)/launch/turtlemimic.launch"/>  
+
+</launch>

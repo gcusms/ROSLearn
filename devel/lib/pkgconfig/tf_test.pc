@@ -1,0 +1,8 @@
+prefix=/home/sms/ROS_Workspace/work_test1/devel
+
+Name: tf_test
+Description: Description of tf_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,2 +1,2 @@
-package_one
+package_one:robot_package:tf_test
 -DCATKIN_DEVEL_PREFIX=/home/sms/ROS_Workspace/work_test1/devel -DCMAKE_INSTALL_PREFIX=/home/sms/ROS_Workspace/work_test1/install -G Unix Makefiles
